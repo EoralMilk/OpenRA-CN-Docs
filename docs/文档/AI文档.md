@@ -39,7 +39,8 @@
 ## ai.yaml的编写:
 
 **范例：**
-```
+
+```yaml
 AI@RushAI:
 		Name: Rush AI //AI的名称
 //一般名字 CommonNames 部分可以不用管它
@@ -98,7 +99,8 @@ AI@RushAI:
 ```
 
 ## 超级武器范例：
-```
+
+```yaml
 SupportPowerDecision@nukepower: //AI注册名
 			OrderName: NukePowerInfoOrder //AI名称
 			MinimumAttractiveness: 3000 //AI在敌人单位/建筑物总价为多少钱的时候选择投放超级武器

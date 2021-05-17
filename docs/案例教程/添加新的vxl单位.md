@@ -43,7 +43,7 @@
 
 ## 单位YAML脚本文件的修改：
 
-```
+```yaml
 APACHE: //单位定义名，类似于RA2 mod中注册单位
 	Inherits: ^Helicopter //属性：直升机
 	-SpawnActorOnDeath: //单位死亡后生成的单位
@@ -113,7 +113,7 @@ APACHE: //单位定义名，类似于RA2 mod中注册单位
 
 在Aircraft.yaml文件中加入如下代码：
 
-```
+```yaml
 apache: //单位注册
 	icon: apchicon //单位图标
 		Start: 0 //图标不需要动画，所以Start和Length都是0
@@ -129,7 +129,7 @@ apache: //单位注册
 
 按照本文的单位属性（空军单位），代码无需额外注册炮塔和炮管，所以只须一个空的`idle`即可
 
-```
+```yaml
 apache:
 	idle:
 但本文还是提供了车辆单位的设定方法：

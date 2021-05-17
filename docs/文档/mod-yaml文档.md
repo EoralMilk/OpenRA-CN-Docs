@@ -51,6 +51,7 @@
 - 如果您不需要任何mod，在这里提到modchooser仍然是一个很好的实践，它的版本设置为您的mod使用的任何OpenRA版本。
 
 例如:
+
 ```yaml
 RequiresMods:
 	ra: playtest-20160424
@@ -63,11 +64,14 @@ RequiresMods:
 `Assemblies`模块列出了你的mod需要工作的所有游戏逻辑.dll，每行一个。您很可能至少需要使用`OpenRA.Mods.Common.dll`。因为它包含了大量的游戏逻辑。
 
 例如:
+
 ```yaml
 Assemblies:
 	common|OpenRA.Mods.Common.dll
 	ts|OpenRA.Mods.TS.dll
 ```
+
+<br/>
 
 ### Packages
 
@@ -86,6 +90,8 @@ Assemblies:
 - 对于mod包和包含与其他包相同文件名的位置，设置显式挂载非常有用。可以将它们用作一种简写符号，以减少路径引用的冗长，并且还会导致文件名查找更喜欢显式的包而不是其他包。只有当在显式的包中找不到文件时，才会参考其他文件。
 
 
+<br/>
+
 特殊符号表:
 
 | 符号 | 意义 |
@@ -97,7 +103,10 @@ Assemblies:
 | $         | 指示对mod包的引用(例如`$ra`的意思是**安装了ra mod的任何地方**) |
 | \|        | 用于指示对显式包的引用(例如。“ra \ | missions.yaml”) |
 
+<br/>
+
 一个虚构的XY mod的例子::
+
 ```yaml
 Packages:
 	.
